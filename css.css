@@ -1,0 +1,18 @@
+.left{
+float: left;
+background-color: aqua;
+width: 40%;
+height: 300px;
+color: brown;
+font-size: 50px;
+text-align: center;
+}
+.right{
+float: right;
+background-color: aqua;
+width: 40%;
+height: 300px;
+color: brown;
+font-size: 50px;
+text-align: center;
+}
