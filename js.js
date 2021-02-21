@@ -8,9 +8,20 @@ html()
 
 */
 $(document).ready(function(){
-
+    
 $(".left").hover(function(){
     
+    var dwr=$(".right").width()
+    if ($(".left").width()>dwr){
+        $(".result").html("Left > Rihgt")
+    }
+    else if($(".left").width()<dwr){
+       $(".result").html("Left < Rihgt")
+    }
+    else{
+       $(".result").html("Left == Rihgt")
+    }
+
     $(this).width("-="+30)
     $(".left span").html("- "+$(this).width()+"px")
 
@@ -18,17 +29,29 @@ $(".left").hover(function(){
     $(".right span").html("+ "+$(".right").width()+"px")
     $(".right").css({
     
-        "color":"aqua",
-        "background":"brown",
+        "color":"rgb(3, 2, 27)",
+        "background":"rgb(3, 0, 202)",
    })
 },
 function(){
 
+    var dwr=$(".right").width()
+    if ($(".left").width()>dwr){
+        $(".result").html("Left > Rihgt")
+    }
+    else if($(".left").width()<dwr){
+       $(".result").html("Left < Rihgt")
+    }
+    else{
+    
+       $(".result").html("Left == Rihgt")
+    }
+
     $(".right span").html($(".right").width()+"px")
     $(".right").css({
     
-        "color":"brown",
-        "background":"aqua",
+        "color":" rgb(3, 0, 202)",
+        "background":"rgba(160, 128, 23, 0.739)",
    })
    $(".left span").html($(this).width()+"px")
 }
@@ -37,6 +60,18 @@ function(){
 
 $(".right").hover(function(){
     
+    var dwr=$(".right").width()
+    if ($(".left").width()>dwr){
+        $(".result").html("Left > Rihgt")
+    }
+    else if($(".left").width()<dwr){
+       $(".result").html("Left < Rihgt")
+    }
+    else{
+    
+       $(".result").html("Left == Rihgt")
+    }
+
     $(this).width("-="+30)
     $(".right span").html("- "+$(this).width()+"px")
 
@@ -44,17 +79,29 @@ $(".right").hover(function(){
     $(".left span").html("+ "+$(".left").width()+"px")
     $(".left").css({
         
-            "color":"aqua",
-            "background":"brown",
+            "color":"rgb(3, 2, 27)",
+            "background":"rgb(3, 0, 202)",
     })
 },
 function(){
 
+
+    var dwr=$(".right").width()
+    if ($(".left").width()>dwr){
+        $(".result").html("Left > Rihgt")
+    }
+    else if($(".left").width()<dwr){
+       $(".result").html("Left < Rihgt")
+    }
+    else{
+       $(".result").html("Left == Rihgt")
+    }
+
     $(".left span").html($(".left").width()+"px")
     $(".left").css({
     
-        "color":"brown",
-        "background":"aqua",
+        "color":"rgb(3, 0, 202)",
+        "background":"rgba(160, 128, 23, 0.739)",
    })
    $(".right span").html($(this).width()+"px")
 }

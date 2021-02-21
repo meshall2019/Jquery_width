@@ -1,18 +1,39 @@
 .left{
 float: left;
-background-color: aqua;
+background-color: rgba(160, 128, 23, 0.739);
 width: 40%;
 height: 300px;
-color: brown;
+color: rgb(3, 0, 202);
 font-size: 50px;
 text-align: center;
+border: 4px solid cadetblue;
+border-radius: 3%;
 }
 .right{
 float: right;
-background-color: aqua;
+background-color:rgba(160, 128, 23, 0.739);
 width: 40%;
 height: 300px;
-color: brown;
+color: rgb(3, 0, 202);
 font-size: 50px;
 text-align: center;
+border: 4px solid cadetblue;
+border-radius: 3%;
+}
+
+.result{
+
+border: 6px solid rgb(88, 135, 156);
+border-radius: 6%;
+width: 550px;
+height: 300px;
+position: fixed;
+transform: translate(700px,450px);
+text-align: center;
+font-size: 30px;
+color: blue;
+background-color: lavenderblush;
+padding-top: 100px;
+
+
 }
