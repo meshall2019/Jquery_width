@@ -11,15 +11,23 @@ $(document).ready(function(){
     
 $(".left").hover(function(){
     
+   if($(".right").width()>=1894){
+          
+      $(".span2").html("The Right has full width")
+   }
+   else{
+      $(".span2").html("")
+   }
+
     var dwr=$(".right").width()
     if ($(".left").width()>dwr){
-        $(".result").html("Left > Rihgt")
+        $(".span1").html("Left > Rihgt")
     }
     else if($(".left").width()<dwr){
-       $(".result").html("Left < Rihgt")
+       $(".span1").html("Left < Rihgt")
     }
     else{
-       $(".result").html("Left == Rihgt")
+       $(".span1").html("Left == Rihgt")
     }
 
     $(this).width("-="+30)
@@ -37,14 +45,14 @@ function(){
 
     var dwr=$(".right").width()
     if ($(".left").width()>dwr){
-        $(".result").html("Left > Rihgt")
+        $(".span1").html("Left > Rihgt")
     }
     else if($(".left").width()<dwr){
-       $(".result").html("Left < Rihgt")
+       $(".span1").html("Left < Rihgt")
     }
     else{
     
-       $(".result").html("Left == Rihgt")
+       $(".span1").html("Left == Rihgt")
     }
 
     $(".right span").html($(".right").width()+"px")
@@ -59,17 +67,26 @@ function(){
 
 
 $(".right").hover(function(){
+
+
+   if($(".left").width()>=1894){
+          
+      $(".span2").html("The Left has full width")
+   }
+   else{
+      $(".span2").html("")
+   }
     
     var dwr=$(".right").width()
     if ($(".left").width()>dwr){
-        $(".result").html("Left > Rihgt")
+        $(".sapn1").html("Left > Rihgt")
     }
     else if($(".left").width()<dwr){
-       $(".result").html("Left < Rihgt")
+       $(".span1").html("Left < Rihgt")
     }
     else{
     
-       $(".result").html("Left == Rihgt")
+       $(".span1").html("Left == Rihgt")
     }
 
     $(this).width("-="+30)
@@ -88,13 +105,13 @@ function(){
 
     var dwr=$(".right").width()
     if ($(".left").width()>dwr){
-        $(".result").html("Left > Rihgt")
+        $(".span1").html("Left > Rihgt")
     }
     else if($(".left").width()<dwr){
-       $(".result").html("Left < Rihgt")
+       $(".span1").html("Left < Rihgt")
     }
     else{
-       $(".result").html("Left == Rihgt")
+       $(".span1").html("Left == Rihgt")
     }
 
     $(".left span").html($(".left").width()+"px")

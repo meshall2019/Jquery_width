@@ -1,8 +1,11 @@
 .left{
 position: fixed;
+bottom: 0px;
 background-color: rgba(160, 128, 23, 0.739);
-width: 40%;
+width: 50%;
 height: 300px;
+max-width: 1902px;
+min-width: 402px;
 color: rgb(3, 0, 202);
 font-size: 50px;
 text-align: center;
@@ -13,8 +16,10 @@ border-radius: 3%;
 right: 0px;
 position: fixed;
 background-color:rgba(160, 128, 23, 0.739);
-width: 40%;
+width: 50%;
 height: 300px;
+max-width: 1902px;
+min-width: 402px;
 color: rgb(3, 0, 202);
 font-size: 50px;
 text-align: center;
@@ -23,18 +28,16 @@ border-radius: 3%;
 }
 
 .result{
-
 border: 6px solid rgb(88, 135, 156);
 border-radius: 6%;
 width: 550px;
 height: 300px;
 position: fixed;
-transform: translate(700px,450px);
+transform: translate(700px,330px);
 text-align: center;
 font-size: 30px;
 color: blue;
 background-color: lavenderblush;
 padding-top: 100px;
-
-
 }
+.span2{color: brown;}
